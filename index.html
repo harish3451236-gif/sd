@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Sri Lakshmi Kalyana Mahal - a grand marriage hall for weddings, receptions and family functions. Check dates, see the hall, and send an enquiry online.">
+<meta name="theme-color" content="#7a1020">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%237A1020'/%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%23F2C14E' stroke-width='3'/%3E%3Ctext x='50' y='66' font-size='44' text-anchor='middle' fill='%23F2C14E'%3E%E0%AE%B8%3C/text%3E%3C/svg%3E">
+<noscript><style>.gate{display:none!important}body.locked{overflow:auto!important}</style></noscript>
+<title>Sri Lakshmi Kalyana Mahal – Wedding Hall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;600;700&family=Noto+Serif+Tamil:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF1DC; --card:#FFFAEE; --ink:#3A1A0E; --muted:#6B4A3A; --line:#E3CFA3;
+  --maroon:#7A1020; --maroon-ink:#FFF3D6; --gold:#D4A017; --gold-bright:#F2C14E;
+  --head:#7A1020; --price:#7A1020;
+  --free-bg:#E1F0D8; --free-ink:#1E5B26; --booked-bg:#F6D3D3; --booked-ink:#7A1020;
+  --display:"Yatra One",Georgia,"Times New Roman",serif;
+  --body:"Mukta","Noto Serif Tamil","Segoe UI",Arial,sans-serif;
+  --tamil:"Noto Serif Tamil","Mukta",serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#220A0F; --card:#33121A; --ink:#F7EBD2; --muted:#CDB596; --line:#5A2A33;
+    --maroon:#4A0E19; --head:#F2C14E; --price:#F2C14E;
+    --free-bg:#1C3D22; --free-ink:#BFE8C3; --booked-bg:#4D1620; --booked-ink:#F4B6BD;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#220A0F; --card:#33121A; --ink:#F7EBD2; --muted:#CDB596; --line:#5A2A33;
+  --maroon:#4A0E19; --head:#F2C14E; --price:#F2C14E;
+  --free-bg:#1C3D22; --free-ink:#BFE8C3; --booked-bg:#4D1620; --booked-ink:#F4B6BD;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+body{
+  margin:0;background-color:var(--bg);
+  background-image:
+    radial-gradient(ellipse at 50% 0%,rgba(122,16,32,.08),transparent 62%),
+    radial-gradient(circle at center,transparent 0 28px,rgba(212,160,23,.06) 29px 30px,transparent 31px 70px),
+    repeating-conic-gradient(from -7.5deg at center,rgba(212,160,23,.03) 0deg 2deg,transparent 2deg 15deg);
+  background-size:100% 720px,180px 180px,180px 180px;
+  background-position:center top,center center,center center;
+  color:var(--ink);font-family:var(--body);font-size:1.1rem;line-height:1.65
+}
+body.locked{overflow:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold-bright);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.2;font-weight:400;color:var(--head)}
+html[lang="ta"] h1,html[lang="ta"] h2,html[lang="ta"] h3,html[lang="ta"] .logo,html[lang="ta"] .stats b{font-family:var(--tamil);font-weight:700;line-height:1.35}
+
+/* Temple border band (like a Kanchipuram saree border) */
+.band{height:18px;background:
+  linear-gradient(var(--gold) 0 3px,transparent 3px 15px,var(--gold) 15px 18px),
+  repeating-linear-gradient(90deg,var(--maroon) 0 14px,#5C0B18 14px 28px)}
+/* Mango-leaf toran with marigolds */
+.toran{height:60px;background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='58'%3E%3Cpath d='M20 6C9 21 11 43 20 56C29 43 31 21 20 6Z' fill='%23358A3C'/%3E%3Cpath d='M20 10V51' stroke='%231E5B26' stroke-width='1.5'/%3E%3Ccircle cx='20' cy='5' r='4.5' fill='%23F29F05'/%3E%3C/svg%3E") 0 2px/40px 58px repeat-x,
+  linear-gradient(var(--gold),var(--gold)) 0 4px/100% 3px no-repeat}
+
+/* Language gate (shown before the website opens) */
+.gate{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 0,#9A1B2E,var(--maroon) 70%);color:var(--maroon-ink);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:auto;
+  padding:calc(70px + env(safe-area-inset-top,0px)) 1.25rem calc(1.5rem + env(safe-area-inset-bottom,0px))}
+.gate .toran{position:absolute;top:env(safe-area-inset-top,0px);left:0;right:0}
+.gate .frame{max-width:480px;width:100%;border:3px solid var(--gold-bright);border-radius:220px 220px 18px 18px;
+  box-shadow:inset 0 0 0 6px var(--maroon),inset 0 0 0 8px var(--gold-bright);
+  padding:clamp(3rem,12vw,4.5rem) 1.5rem 2.25rem;background:rgba(74,14,25,.35)}
+.gate .tamil{font-size:1.5rem}
+.gate h1{color:var(--gold-bright);font-size:clamp(1.7rem,6vw,2.3rem);margin:.4rem 0 1.25rem}
+.gate .ask{margin:0 0 1.25rem;opacity:.95}
+.gate .ask b{display:block;font-family:var(--tamil);font-weight:500;margin-top:.15rem}
+.gate .choices{display:grid;gap:.8rem}
+.lang-btn{font-family:var(--tamil);font-weight:700;font-size:1.5rem;background:var(--gold-bright);color:#3A1A0E;border:2px solid var(--gold-bright);border-radius:999px;padding:.8rem 1rem;cursor:pointer;width:100%}
+.lang-btn.alt{background:transparent;color:var(--maroon-ink);font-family:var(--body)}
+.lang-btn:hover{filter:brightness(1.07)}
+
+header.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0}
+.logo{font-family:var(--display);font-size:1.5rem;text-decoration:none;color:var(--head)}
+nav{display:flex;gap:1.1rem;align-items:center;font-weight:600}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.call{background:var(--maroon);color:var(--maroon-ink);padding:.5rem 1.1rem;border-radius:999px;border:2px solid var(--gold)}
+.lang-switch{font:inherit;font-weight:600;font-family:var(--tamil);background:transparent;color:var(--head);border:2px solid var(--gold);border-radius:999px;padding:.4rem .9rem;cursor:pointer}
+
+/* Hero in an arch, like a mandap entrance */
+.hero{padding:clamp(1.5rem,5vw,3rem) 0 1rem;text-align:center}
+.arch{max-width:780px;margin:0 auto;background:radial-gradient(circle at 50% 0,#9A1B2E,var(--maroon) 70%);color:var(--maroon-ink);
+  border-radius:300px 300px 18px 18px;padding:clamp(3rem,9vw,5rem) clamp(1.25rem,5vw,3rem) 2.5rem;
+  border:3px solid var(--gold-bright);box-shadow:inset 0 0 0 7px var(--maroon),inset 0 0 0 9px var(--gold-bright)}
+.tamil{font-family:var(--tamil);font-weight:700;color:var(--gold-bright);font-size:1.35rem;margin:0}
+.tamil2{font-family:var(--tamil);color:var(--maroon-ink);opacity:.9;margin:.15rem 0 1rem}
+.hero h1{font-size:clamp(2.1rem,6vw,3.5rem);color:var(--gold-bright)}
+.hero p.lead{font-size:1.15rem;max-width:34rem;margin:1.1rem auto 1.6rem;opacity:.95}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;font-weight:700;font-family:var(--body);font-size:1.05rem;background:var(--gold-bright);color:#3A1A0E;padding:.85rem 1.5rem;border-radius:999px;text-decoration:none;border:2px solid var(--gold-bright);cursor:pointer}
+.btn:hover{filter:brightness(1.06)}
+.btn.alt{background:transparent;color:var(--maroon-ink);border-color:var(--gold-bright)}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.75rem}
+.stats div{background:var(--card);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-6px;border-radius:14px;padding:1.1rem .75rem}
+.stats b{font-family:var(--display);font-weight:400;font-size:2.4rem;line-height:1.1;display:block;color:var(--price)}
+.stats span{font-size:.98rem;color:var(--muted);line-height:1.35;display:block}
+
+section{padding:clamp(2.25rem,6vw,4rem) 0}
+.sec-head{margin:0 auto 2rem;max-width:36rem;text-align:center}
+.sec-head h2{font-size:clamp(1.9rem,5vw,2.9rem)}
+.sec-head h2::after{content:"";display:block;height:16px;width:220px;margin:.7rem auto 0;
+  background:
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect x='3' y='3' width='10' height='10' fill='%23D4A017' transform='rotate(45 8 8)'/%3E%3C/svg%3E") center/16px 16px no-repeat,
+   linear-gradient(var(--gold),var(--gold)) left center/92px 2px no-repeat,
+   linear-gradient(var(--gold),var(--gold)) right center/92px 2px no-repeat}
+.sec-head p{color:var(--muted);margin:.8rem 0 0}
+
+.card,.feat div,.plan{background:var(--card);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-6px;border-radius:14px}
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem}
+.feat div{padding:1.4rem 1.4rem 1.25rem}
+.feat h3{font-size:1.35rem;margin-bottom:.35rem}
+.feat p{margin:0;color:var(--muted);font-size:1rem;line-height:1.5}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:.75rem}
+.gallery figure{margin:0;border-radius:14px;display:flex;align-items:flex-end;padding:.75rem;font-weight:600;color:#fff;border:2px solid var(--gold)}
+.g1{grid-column:span 2;grid-row:span 2;background:linear-gradient(160deg,#7A1020,#B22234)}
+.g2{background:#1E5B26}.g3{background:#F29F05;color:#3A1A0E!important}
+.g4{background:#5B2A6E}.g5{grid-column:span 2;background:#C2410C}
+.note{font-size:.95rem;color:var(--muted);margin-top:.75rem;text-align:center}
+
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.plan{padding:1.6rem;display:flex;flex-direction:column;gap:.5rem}
+.plan.best{border-width:3px}
+.plan h3{font-size:1.45rem}
+.plan .price{font-family:var(--display);font-size:2.2rem;color:var(--price)}
+.plan .price small{font-family:var(--body);font-size:.95rem;color:var(--muted)}
+.plan ul{margin:.25rem 0 0;padding-left:1.2rem;color:var(--muted);font-size:1rem}
+
+/* availability calendar */
+.cal{background:var(--card);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-6px;border-radius:18px;padding:clamp(1.25rem,3vw,2rem);max-width:560px;margin:0 auto}
+.cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.cal-head h3{font-size:1.6rem}
+.cal-head button{font:inherit;font-size:1.4rem;width:2.6rem;height:2.6rem;border-radius:50%;border:2px solid var(--gold);background:var(--bg);color:var(--ink);cursor:pointer}
+.cal-head button:disabled{opacity:.35;cursor:not-allowed}
+.days,.cells{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center}
+.days span{font-weight:700;font-size:.9rem;color:var(--muted);padding-bottom:.25rem}
+.cells button,.cells span{aspect-ratio:1;display:grid;place-items:center;border-radius:10px;font:inherit;font-size:1rem;border:0}
+.cells .free{background:var(--free-bg);color:var(--free-ink);cursor:pointer;font-weight:600}
+.cells .free:hover{outline:2px solid var(--gold)}
+.cells .booked{background:var(--booked-bg);color:var(--booked-ink);text-decoration:line-through}
+.cells .past{color:var(--muted);opacity:.45}
+.legend{display:flex;gap:1.25rem;flex-wrap:wrap;margin-top:1rem;font-size:.95rem;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:.4rem;vertical-align:-2px;border:1px solid var(--gold)}
+
+.book{background:var(--maroon);color:var(--maroon-ink);border-radius:22px;padding:clamp(1.5rem,5vw,3rem);display:grid;grid-template-columns:.9fr 1.1fr;gap:2rem;border:3px solid var(--gold-bright);box-shadow:inset 0 0 0 6px var(--maroon),inset 0 0 0 8px var(--gold)}
+.book h2{font-size:clamp(1.8rem,5vw,2.7rem);color:var(--gold-bright)}
+.book p{opacity:.95}
+form{display:grid;gap:.85rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+label{display:grid;gap:.25rem;font-weight:600;font-size:1rem}
+input,select{font:inherit;padding:.7rem .85rem;border-radius:10px;border:2px solid transparent;background:#FFFAEE;color:#3A1A0E;width:100%}
+input:focus,select:focus{border-color:var(--gold-bright);outline:none}
+.book .btn{justify-self:start}
+
+/* payment */
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.pay .box{background:var(--card);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-6px;border-radius:14px;padding:1.6rem;display:grid;gap:.75rem;align-content:start}
+.pay h3{font-size:1.4rem}
+.pay .row{display:flex;justify-content:space-between;align-items:center;gap:.75rem;flex-wrap:wrap;border-bottom:1px solid var(--line);padding:.35rem 0}
+.pay .row span{color:var(--muted)}
+.pay .row b{word-break:break-all}
+.pay .copy{font:inherit;font-size:.9rem;font-weight:600;background:transparent;color:var(--head);border:1.5px solid var(--gold);border-radius:999px;padding:.2rem .8rem;cursor:pointer}
+.pay .amt{display:flex;align-items:center;gap:.5rem}
+.pay .amt input{border:2px solid var(--gold);background:var(--bg);color:var(--ink);max-width:11rem}
+.pay .btn{background:var(--maroon);color:var(--maroon-ink);border-color:var(--gold);text-align:center}
+.pay .btn.gold{background:var(--gold-bright);color:#3A1A0E}
+.qr{width:210px;max-width:100%;aspect-ratio:1;margin:.25rem auto 0;background:#fff;border:3px solid var(--gold);border-radius:14px;padding:8px;display:grid;place-items:center;text-align:center;color:#6B4A3A;font-size:.95rem}
+.qr svg,.qr img{width:100%;height:100%;display:block;object-fit:contain}
+.qr-cap{text-align:center;font-weight:700;color:var(--head);margin:0}
+.pay-note{margin:1.25rem auto 0;max-width:46rem;text-align:center;color:var(--muted);font-size:1rem}
+.pay-note b{color:var(--head)}
+
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
+.visit .sec-head{text-align:left;margin-left:0}
+.visit .sec-head h2::after{margin-left:0;width:200px}
+.visit dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.25rem}
+.visit dt{font-weight:700;color:var(--head)}.visit dd{margin:0;color:var(--muted)}
+.map{border-radius:14px;background:repeating-linear-gradient(45deg,var(--card) 0 14px,var(--line) 14px 15px);border:2px solid var(--gold);min-height:220px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:1rem}
+
+footer{padding:2rem 0 2.5rem;color:var(--muted);text-align:center;font-size:1rem}
+footer .tamil{font-size:1.2rem;color:var(--head)}
+
+@media (max-width:800px){
+  .pay{grid-template-columns:1fr}
+  .book,.visit{grid-template-columns:1fr}
+  .arch{border-radius:150px 150px 18px 18px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .g1,.g5{grid-column:span 2}
+  .hide-sm{display:none}
+  .two{grid-template-columns:1fr}
+  .stats b{font-size:1.6rem;white-space:nowrap}
+  .stats div{padding:1rem .4rem}
+  .visit .sec-head{text-align:center}
+  .visit .sec-head h2::after{margin-left:auto}
+  .logo{font-size:1.2rem}
+}
+.wa-float{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:50;display:flex;align-items:center;gap:.5rem;background:#1FA855;color:#fff;font-weight:700;text-decoration:none;padding:.7rem 1.1rem;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.3);border:2px solid #fff}
+.wa-float svg{width:22px;height:22px;fill:#fff}
+
+/* ===== More detail: steps, FAQ, marquee, icons ===== */
+.ico{font-size:1.8rem;display:block;line-height:1;margin-bottom:.45rem;transition:transform .3s}
+.feat div:hover .ico{transform:scale(1.2) rotate(-6deg)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}
+.step{background:var(--card);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-6px;border-radius:14px;padding:1.6rem 1.4rem;text-align:center}
+.step .num{display:grid;place-items:center;width:3rem;height:3rem;margin:0 auto .7rem;border-radius:50%;background:var(--maroon);color:var(--gold-bright);font-family:var(--display);font-size:1.4rem;border:2px solid var(--gold);transition:transform .5s}
+.step:hover .num{transform:rotate(360deg) scale(1.1)}
+.step h3{font-size:1.25rem;margin-bottom:.3rem}
+.step p{margin:0;color:var(--muted);font-size:1rem;line-height:1.5}
+.faq{max-width:760px;margin:0 auto;display:grid;gap:.75rem}
+.faq details{background:var(--card);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-5px;border-radius:14px}
+.faq summary{cursor:pointer;list-style:none;padding:1rem 3.2rem 1rem 1.3rem;font-weight:700;position:relative;color:var(--head)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:1.2rem;top:50%;transform:translateY(-50%);font-size:1.6rem;line-height:1;color:var(--gold);transition:transform .3s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq .ans{padding:0 1.3rem 1.1rem;color:var(--muted);animation:fadeDown .35s ease}
+.marquee{overflow:hidden;background:var(--maroon);color:var(--gold-bright);border-block:2px solid var(--gold);border-radius:12px;padding:.65rem 0;margin:1.75rem 0 0;white-space:nowrap}
+.marquee .track{display:inline-flex;animation:scrollx 34s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.marquee span{padding:0 1rem;font-family:var(--tamil);font-weight:700}
+.marquee span.dot{padding:0;color:var(--gold)}
+
+/* ===== Animation ===== */
+.hero{position:relative}
+.petals{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:2;border-radius:18px}
+.petals i{position:absolute;top:-26px;border-radius:60% 0 60% 60%;background:linear-gradient(135deg,#F29F05,#E8590C);opacity:.85;animation:fall linear infinite,flutter ease-in-out infinite alternate}
+.petals i.p2{background:linear-gradient(135deg,#F2C14E,#D4A017)}
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-bright));transform-origin:0 50%;transform:scaleX(0);z-index:60;pointer-events:none}
+.toran{transform-origin:top center;animation:sway 6s ease-in-out infinite alternate}
+.arch{animation:glow 4.5s ease-in-out infinite}
+.js .arch>*{opacity:0}
+body.ready .arch>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*.14s + .1s)}
+.arch>*:nth-child(1){--i:0}.arch>*:nth-child(2){--i:1}.arch>*:nth-child(3){--i:2}.arch>*:nth-child(4){--i:3}.arch>*:nth-child(5){--i:4}
+.gate .frame{animation:popin .8s cubic-bezier(.2,.8,.2,1) both}
+.gate.leaving{opacity:0;pointer-events:none;transition:opacity .45s ease}
+.diya{font-size:2.3rem;line-height:1;margin:-.5rem 0 .4rem;animation:flicker 2.2s ease-in-out infinite}
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-130%);pointer-events:none}
+.btn:hover::after{transform:translateX(130%);transition:transform .7s ease}
+.feat div,.plan,.pay .box,.step,.stats div,.cal{transition:transform .25s ease,box-shadow .25s ease}
+.feat div:hover,.plan:hover,.pay .box:hover,.step:hover,.stats div:hover{transform:translateY(-5px);box-shadow:0 12px 26px rgba(122,16,32,.2)}
+.gallery figure{transition:transform .35s ease,box-shadow .35s ease}
+.gallery figure:hover{transform:scale(1.04) rotate(-.6deg);box-shadow:0 12px 26px rgba(0,0,0,.28);z-index:1}
+.cells > *{animation:pop .35s ease}
+.cells .free{transition:transform .15s ease}
+.cells .free:hover{transform:scale(1.14)}
+.wa-float::before{content:"";position:absolute;inset:-2px;border-radius:999px;animation:ring 2.4s ease-out infinite;pointer-events:none}
+.wa-float{transition:transform .2s ease}
+.wa-float:hover{transform:scale(1.06)}
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.js .reveal.in{opacity:1;transform:none}
+.js .sec-head.reveal h2::after{transform:scaleX(0)}
+.js .sec-head.reveal.in h2::after{transform:scaleX(1);transition:transform .9s ease .3s}
+
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@keyframes popin{from{opacity:0;transform:scale(.92) translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes sway{from{transform:skewX(-.9deg)}to{transform:skewX(.9deg)}}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 0 rgba(242,193,78,0))}50%{filter:drop-shadow(0 0 18px rgba(242,193,78,.5))}}
+@keyframes flicker{0%,100%{transform:scale(1);filter:drop-shadow(0 0 8px rgba(242,193,78,.7))}45%{transform:scale(1.08);filter:drop-shadow(0 0 18px rgba(242,193,78,1))}70%{transform:scale(.97);filter:drop-shadow(0 0 10px rgba(242,193,78,.8))}}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+@keyframes fall{to{translate:0 var(--h,700px)}}
+@keyframes flutter{from{transform:translateX(0) rotate(-25deg)}to{transform:translateX(var(--dx,30px)) rotate(45deg)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(31,168,85,.6)}100%{box-shadow:0 0 0 18px rgba(31,168,85,0)}}
+
+
+/* ===== Even more animation ===== */
+.arch{position:relative;z-index:1;translate:0 var(--py,0px)}
+.stats{position:relative;z-index:1}
+.halo{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;--hy:330px}
+.halo svg{position:absolute;left:50%;top:var(--hy);width:min(130vw,980px);height:auto;opacity:.65;animation:spin 80s linear infinite}
+.malai{position:absolute;top:0;width:22px;height:230px;transform-origin:50% 0;z-index:3;pointer-events:none;animation:swing 4.5s ease-in-out infinite alternate;
+  background:
+   radial-gradient(circle at 50% 11px,#F29F05 0 8px,transparent 9px) 0 0/22px 44px repeat-y,
+   radial-gradient(circle at 50% 33px,#E8590C 0 8px,transparent 9px) 0 0/22px 44px repeat-y,
+   linear-gradient(#5B7F2B,#5B7F2B) 50% 0/2px 100% no-repeat}
+.malai.l{left:4px}
+.malai.r{right:4px;animation-delay:-2.2s}
+body.ready .arch>h1{animation:rise .9s cubic-bezier(.2,.7,.2,1) both,shine 5s linear infinite;animation-delay:calc(var(--i,0)*.14s + .1s),0s}
+.hero h1{background:linear-gradient(100deg,#F2C14E 0%,#F2C14E 38%,#FFF6DC 50%,#F2C14E 62%,#F2C14E 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero .btns .btn:not(.alt){animation:pulseGlow 2.8s ease-in-out infinite}
+.plan.best{animation:bestglow 3s ease-in-out infinite}
+.step .num::after{content:"";position:absolute;inset:-3px;border-radius:50%;animation:ring2 2.8s ease-out infinite;pointer-events:none}
+.step .num{position:relative}
+.step:nth-child(2) .num::after{animation-delay:.7s}
+.step:nth-child(3) .num::after{animation-delay:1.4s}
+.step:nth-child(4) .num::after{animation-delay:2.1s}
+.ico{animation:bob 3.4s ease-in-out infinite}
+.feat div:nth-child(2) .ico{animation-delay:-.7s}
+.feat div:nth-child(3) .ico{animation-delay:-1.4s}
+.feat div:nth-child(4) .ico{animation-delay:-2.1s}
+.feat div:nth-child(5) .ico{animation-delay:-2.8s}
+.cells > *:nth-child(7n+2){animation-delay:30ms}
+.cells > *:nth-child(7n+3){animation-delay:60ms}
+.cells > *:nth-child(7n+4){animation-delay:90ms}
+.cells > *:nth-child(7n+5){animation-delay:120ms}
+.cells > *:nth-child(7n+6){animation-delay:150ms}
+.cells > *:nth-child(7n+7){animation-delay:180ms}
+.cells.sl{animation:slideL .4s ease}
+.cells.sr{animation:slideR .4s ease}
+.marquee.rev{margin:2.5rem 0 0}
+.marquee.rev .track{animation-direction:reverse;animation-duration:42s}
+.diyas{display:flex;justify-content:center;gap:1.4rem;font-size:1.6rem;margin-top:1.5rem}
+.diyas span{animation:flicker 2.2s ease-in-out infinite}
+.diyas span:nth-child(2){animation-delay:-.5s}.diyas span:nth-child(3){animation-delay:-1.1s}
+.diyas span:nth-child(4){animation-delay:-1.6s}.diyas span:nth-child(5){animation-delay:-.2s}
+.spark{position:fixed;width:7px;height:9px;border-radius:60% 0 60% 60%;pointer-events:none;z-index:200;animation:burst .85s ease-out forwards}
+.js .plan.reveal,.js .step.reveal{transform:translateY(26px) scale(.94)}
+.js .plan.reveal.in,.js .step.reveal.in{transform:none}
+.js .gallery figure.reveal{transform:scale(.85) rotate(-3deg)}
+.js .gallery figure.reveal.in{transform:none}
+.js .faq details.reveal{transform:translateX(-34px)}
+.js .faq details.reveal.in{transform:none}
+@media (max-width:800px){.halo{--hy:200px}}
+@media (max-width:560px){.malai{display:none}}
+
+@keyframes spin{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes swing{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+@keyframes shine{from{background-position:150% 0}to{background-position:-100% 0}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(242,193,78,.7)}50%{box-shadow:0 0 0 12px rgba(242,193,78,0)}}
+@keyframes bestglow{0%,100%{box-shadow:0 0 0 0 rgba(242,193,78,0)}50%{box-shadow:0 0 24px 3px rgba(242,193,78,.6)}}
+@keyframes ring2{0%{box-shadow:0 0 0 0 rgba(212,160,23,.65)}100%{box-shadow:0 0 0 14px rgba(212,160,23,0)}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -6px}}
+@keyframes slideL{from{opacity:.2;transform:translateX(-26px)}to{opacity:1;transform:none}}
+@keyframes slideR{from{opacity:.2;transform:translateX(26px)}to{opacity:1;transform:none}}
+@keyframes burst{from{transform:translate(0,0) scale(1) rotate(0);opacity:1}to{transform:translate(var(--tx),var(--ty)) scale(.3) rotate(220deg);opacity:0}}
+
+
+/* ===== online booking ===== */
+.ob{max-width:560px;margin:0 auto;background:var(--card);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-6px;border-radius:18px;padding:clamp(1.4rem,3vw,2.2rem);display:grid;gap:.9rem}
+.ob input{border:2px solid var(--gold);background:var(--bg);color:var(--ink)}
+.ob-row{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:.55rem}
+.ob-row span{color:var(--muted)}
+.ob-row b{color:var(--head);font-size:1.15rem}
+.ob .btn{background:var(--maroon);color:var(--maroon-ink);border-color:var(--gold);text-align:center;width:100%}
+.ob .btn:disabled{opacity:.6;cursor:wait}
+.ob-msg{margin:0;min-height:1.6em;font-weight:600}
+.ob-msg.err{color:var(--booked-ink)}
+.ob-msg.ok{color:var(--free-ink)}
+.ob .btn.inv{background:var(--gold-bright);color:#3A1A0E;border-color:var(--gold-bright)}
+.hp{position:absolute!important;left:-9999px;width:1px!important;height:1px;opacity:0;pointer-events:none}
+.enq-msg{margin:0;min-height:1.5em;font-weight:700;color:var(--gold-bright)}
+footer .updated{margin:.25rem 0 0;font-size:.9rem;color:var(--head);font-weight:600}
+.ob-safe{margin:0;font-size:.92rem;color:var(--muted);text-align:center}
+.cells .free.sel{position:relative;isolation:isolate;background:var(--maroon);color:var(--gold-bright);outline:2px solid var(--gold-bright)}
+.cells .free.sel::after{content:"";position:absolute;inset:-4px;border:2px solid var(--gold-bright);border-radius:13px;animation:selPulse 1.8s ease-out infinite;pointer-events:none}
+.btn{transition:transform .18s ease,filter .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.96)}
+.diya{animation:flicker 2.2s ease-in-out infinite,diyaFloat 3.2s ease-in-out infinite}
+@keyframes selPulse{0%{transform:scale(.9);opacity:.8}100%{transform:scale(1.45);opacity:0}}
+@keyframes diyaFloat{0%,100%{translate:0 0}50%{translate:0 -5px}}
+/* ===== Hover lines ===== */
+nav a:not(.call){position:relative;padding-bottom:3px}
+nav a:not(.call):hover{text-decoration:none}
+nav a:not(.call)::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--gold),var(--gold-bright));transform:scaleX(0);transition:transform .3s ease}
+nav a:not(.call):hover::after,nav a:not(.call):focus-visible::after{transform:scaleX(1)}
+.feat div,.plan,.step,.pay .box,.stats div{position:relative;overflow:hidden}
+.feat div::before,.plan::before,.step::before,.pay .box::before,.stats div::before{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-bright),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .45s ease;pointer-events:none}
+.feat div:hover::before,.plan:hover::before,.step:hover::before,.pay .box:hover::before,.stats div:hover::before{transform:scaleX(1)}
+.visit dd a,footer a{text-decoration:none;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 2px no-repeat;transition:background-size .3s ease}
+.visit dd a:hover,footer a:hover{background-size:100% 2px}
+.faq summary{background:linear-gradient(var(--gold),var(--gold)) 1.3rem calc(100% - .55rem)/0 2px no-repeat;transition:background-size .35s ease}
+.faq summary:hover{background-size:calc(100% - 4.5rem) 2px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal,.js .arch>*{opacity:1!important;transform:none!important}
+  .js .sec-head.reveal h2::after{transform:none!important}
+  .petals,.halo,.malai,.spark{display:none}
+  .marquee{white-space:normal;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="locked">
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- Language gate: shown before the website opens -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="Choose your language">
+  <div class="toran" aria-hidden="true"></div>
+  <div class="frame">
+    <div class="diya" aria-hidden="true">🪔</div>
+    <p class="tamil">வாழ்க வளமுடன்</p>
+    <h1>Sri Lakshmi Kalyana Mahal</h1>
+    <p class="ask">Choose your language<b>மொழியைத் தேர்ந்தெடுங்கள்</b></p>
+    <div class="choices">
+      <button class="lang-btn" data-lang="ta" id="pickTa">தமிழ்</button>
+      <button class="lang-btn alt" data-lang="en">English</button>
+    </div>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/919042040020" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5s-.6-1.400-.8-1.900-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.300 5.300 0 0 0 1.100 2.800 12 12 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<div class="band" aria-hidden="true"></div>
+<div class="toran" aria-hidden="true"></div>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#top" data-i18n="brand">Sri Lakshmi Kalyana Mahal</a>
+    <nav aria-label="Main">
+      <a class="hide-sm" href="#halls" data-i18n="n_fac">Facilities</a>
+      <a class="hide-sm" href="#gallery" data-i18n="n_gal">Gallery</a>
+      <button class="lang-switch" id="langSwitch" aria-label="Change language">தமிழ்</button>
+      <a class="call" href="tel:+919042040020" data-i18n="n_call">Call us</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="petals" id="petals" aria-hidden="true"></div>
+      <div class="halo" aria-hidden="true"><svg viewBox="0 0 400 400" fill="none" stroke="#D4A017" stroke-width="1.4" aria-hidden="true"><circle cx="200" cy="200" r="196" stroke-dasharray="2 7"/><circle cx="200" cy="200" r="168" opacity=".7"/><g fill="rgba(212,160,23,.10)"><path transform="rotate(0.0 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(22.5 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(45.0 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(67.5 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(90.0 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(112.5 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(135.0 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(157.5 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(180.0 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(202.5 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(225.0 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(247.5 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(270.0 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(292.5 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(315.0 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/><path transform="rotate(337.5 200 200)" d="M200 200C182 145 182 95 200 42C218 95 218 145 200 200Z"/></g><g opacity=".8"><circle transform="rotate(0 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(15 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(30 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(45 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(60 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(75 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(90 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(105 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(120 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(135 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(150 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(165 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(180 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(195 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(210 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(225 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(240 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(255 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(270 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(285 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(300 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(315 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(330 200 200)" cx="200" cy="30" r="5"/><circle transform="rotate(345 200 200)" cx="200" cy="30" r="5"/></g><circle cx="200" cy="200" r="46"/><circle cx="200" cy="200" r="22" fill="rgba(212,160,23,.18)"/></svg></div>
+      <div class="malai l" aria-hidden="true"></div>
+      <div class="malai r" aria-hidden="true"></div>
+      <div class="arch">
+        <p class="tamil">வாழ்க வளமுடன்</p>
+        <p class="tamil2">திருமண மண்டபம் · Marriage Hall</p>
+        <h1 data-i18n="h_title">Your wedding, in a hall that feels like home.</h1>
+        <p class="lead" data-i18n="h_lead">A big, clean hall for weddings, receptions and family functions. Dining for 400, rooms for the bride and groom, and parking for your guests.</p>
+        <div class="btns">
+          <a class="btn" href="#availability" data-i18n="h_btn1">Check your date</a>
+          <a class="btn alt" href="#gallery" data-i18n="h_btn2">See the hall</a>
+        </div>
+      </div>
+      <div class="stats">
+        <div><b data-count="500">500</b><span data-i18n="s1">seated in the main hall</span></div>
+        <div><b data-count="400">400</b><span data-i18n="s2">served together in the dining hall</span></div>
+        <div><b data-count="40" data-suffix="+40">40+40</b><span data-i18n="s3">cars + bikes in our own parking</span></div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true"><div class="track"><span>திருமணம் · Wedding</span><span class="dot">✦</span><span>வரவேற்பு · Reception</span><span class="dot">✦</span><span>நிச்சயதார்த்தம் · Engagement</span><span class="dot">✦</span><span>வளைகாப்பு · Baby shower</span><span class="dot">✦</span><span>பிறந்தநாள் · Birthday</span><span class="dot">✦</span><span>திருமணம் · Wedding</span><span class="dot">✦</span><span>வரவேற்பு · Reception</span><span class="dot">✦</span><span>நிச்சயதார்த்தம் · Engagement</span><span class="dot">✦</span><span>வளைகாப்பு · Baby shower</span><span class="dot">✦</span><span>பிறந்தநாள் · Birthday</span><span class="dot">✦</span><span>திருமணம் · Wedding</span><span class="dot">✦</span><span>வரவேற்பு · Reception</span><span class="dot">✦</span><span>நிச்சயதார்த்தம் · Engagement</span><span class="dot">✦</span><span>வளைகாப்பு · Baby shower</span><span class="dot">✦</span><span>பிறந்தநாள் · Birthday</span><span class="dot">✦</span><span>திருமணம் · Wedding</span><span class="dot">✦</span><span>வரவேற்பு · Reception</span><span class="dot">✦</span><span>நிச்சயதார்த்தம் · Engagement</span><span class="dot">✦</span><span>வளைகாப்பு · Baby shower</span><span class="dot">✦</span><span>பிறந்தநாள் · Birthday</span><span class="dot">✦</span></div></div>
+
+    <section id="halls">
+      <div class="sec-head">
+        <h2 data-i18n="f_h">Everything for the big day</h2>
+        <p data-i18n="f_p">One place for the muhurtham, the feast, and the stay.</p>
+      </div>
+      <div class="feat">
+        <div><span class="ico" aria-hidden="true">🏛️</span><h3 data-i18n="f1h">Main hall</h3><p data-i18n="f1p">Wide stage, good lighting and sound, seating for 500 guests.</p></div>
+        <div><span class="ico" aria-hidden="true">🍽️</span><h3 data-i18n="f2h">Dining hall</h3><p data-i18n="f2p">Seats 400 at once. Vegetarian kitchen, or bring your own caterer.</p></div>
+        <div><span class="ico" aria-hidden="true">💍</span><h3 data-i18n="f3h">Bridal and groom rooms</h3><p data-i18n="f3p">4 rooms with mirrors, attached bath and a place to rest.</p></div>
+        <div><span class="ico" aria-hidden="true">🚗</span><h3 data-i18n="f5h">Parking</h3><p data-i18n="f5p">Free parking for 40 cars and 40 bikes.</p></div>
+        <div><span class="ico" aria-hidden="true">⚡</span><h3 data-i18n="f6h">Power backup</h3><p data-i18n="f6p">Full generator backup, so nothing stops during the muhurtham.</p></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="sec-head">
+        <h2 data-i18n="g_h">See the hall</h2>
+        <p data-i18n="g_p">Photos from real weddings held here.</p>
+      </div>
+      <div class="gallery">
+        <figure class="g1" data-i18n="g1">Main hall and stage</figure>
+        <figure class="g2" data-i18n="g2">Mandap</figure>
+        <figure class="g3" data-i18n="g3">Entrance</figure>
+        <figure class="g4" data-i18n="g4">Bridal room</figure>
+        <figure class="g5" data-i18n="g5">Dining hall</figure>
+      </div>
+      <p class="note" data-i18n="g_note">These colored blocks are placeholders. Send me your photos and I will put them here.</p>
+    </section>
+
+    <section id="steps">
+      <div class="sec-head">
+        <h2 data-i18n="st_h">How booking works</h2>
+        <p data-i18n="st_p">Four easy steps to confirm your hall.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h3 data-i18n="st1h">Check the date</h3><p data-i18n="st1p">Look at the calendar. Green dates are free.</p></div>
+        <div class="step"><div class="num">2</div><h3 data-i18n="st2h">See the hall</h3><p data-i18n="st2p">Call or WhatsApp us to visit the hall before you decide.</p></div>
+        <div class="step"><div class="num">3</div><h3 data-i18n="st3h">Send your enquiry</h3><p data-i18n="st3p">Tell us your event details and preferred date on WhatsApp.</p></div>
+        <div class="step"><div class="num">4</div><h3 data-i18n="st4h">Confirm your date</h3><p data-i18n="st4p">We will contact you to confirm availability and booking details.</p></div>
+      </div>
+    </section>
+
+    <section id="availability">
+      <div class="sec-head">
+        <h2 data-i18n="a_h">Is your date free?</h2>
+        <p data-i18n="a_p">Green dates are free. Red dates are already booked. Tap a green date to start your enquiry.</p>
+      </div>
+      <div class="cal">
+        <div class="cal-head">
+          <button id="prev" aria-label="Previous month">‹</button>
+          <h3 id="monthTitle"></h3>
+          <button id="next" aria-label="Next month">›</button>
+        </div>
+        <div class="days" aria-hidden="true"><span data-i18n="d0">Sun</span><span data-i18n="d1">Mon</span><span data-i18n="d2">Tue</span><span data-i18n="d3">Wed</span><span data-i18n="d4">Thu</span><span data-i18n="d5">Fri</span><span data-i18n="d6">Sat</span></div>
+        <div class="cells" id="cells"></div>
+        <div class="legend">
+          <span><i style="background:var(--free-bg)"></i><span data-i18n="a_free">Free</span></span>
+          <span><i style="background:var(--booked-bg)"></i><span data-i18n="a_booked">Booked</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="onlinebook" hidden>
+      <div class="sec-head">
+        <h2 data-i18n="ob_h">Book your date online</h2>
+        <p data-i18n="ob_p">Pick a green date, pay the advance, and your date is booked at once.</p>
+      </div>
+      <div class="ob">
+        <div class="ob-row"><span data-i18n="ob_sel">Your date</span><b id="obDate"></b></div>
+        <label><span data-i18n="b_name">Your name</span><input id="obName" autocomplete="name"></label>
+        <label><span data-i18n="b_phone">Phone number</span><input id="obPhone" type="tel" autocomplete="tel"></label>
+        <label><span data-i18n="ob_email">Email (we send your invoice here)</span><input id="obEmail" type="email" autocomplete="email"></label>
+        <div class="ob-row"><span data-i18n="ob_adv">Advance to pay</span><b id="obAmt"></b></div>
+        <button class="btn" id="obBtn" type="button"></button>
+        <p class="ob-msg" id="obMsg" role="status" aria-live="polite"></p>
+        <a class="btn inv" id="obInv" href="#" download hidden></a>
+        <p class="ob-safe" data-i18n="ob_safe">Payment is handled safely by Razorpay. We never see your card or UPI PIN.</p>
+      </div>
+      <p class="pay-note" data-i18n-html="p_rule"><b>Booking rule:</b> advance of 25% of the hall rent confirms your date. If you cancel 60 days or more before the function, we return the advance after a small deduction. Please confirm the exact rule with us on WhatsApp.</p>
+    </section>
+
+    <section id="book">
+      <div class="book">
+        <div>
+          <h2 data-i18n="b_h">Send your enquiry</h2>
+          <p data-i18n="b_p">Fill in the form and send your enquiry here. We will contact you soon.</p>
+        </div>
+        <form id="enquiry" novalidate>
+          <div class="two">
+            <label><span data-i18n="b_name">Your name</span><input id="name" required autocomplete="name"></label>
+            <label><span data-i18n="b_phone">Phone number</span><input id="phone" type="tel" required autocomplete="tel"></label>
+          </div>
+          <div class="two">
+            <label><span data-i18n="b_date">Function date</span><input id="date" type="date"></label>
+            <label><span data-i18n="b_guests">Number of guests</span><input id="guests" type="number" min="10" max="1000" placeholder="e.g. 400" data-i18n-ph="b_ph"></label>
+          </div>
+          <label><span data-i18n="b_type">Type of function</span>
+            <select id="type">
+              <option value="Wedding" data-i18n="o1">Wedding</option>
+              <option value="Reception" data-i18n="o2">Reception</option>
+              <option value="Engagement" data-i18n="o3">Engagement</option>
+              <option value="Other function" data-i18n="o4">Other function</option>
+            </select>
+          </label>
+          <input class="hp" id="faxnumber" name="faxnumber" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn" type="submit" data-i18n="b_send">Send enquiry</button>
+          <p class="enq-msg" id="enqMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="sec-head">
+        <h2 data-i18n="q_h">Questions people ask</h2>
+        <p data-i18n="q_p">Cannot find your answer? Call or WhatsApp us.</p>
+      </div>
+      <div class="faq">
+        <details><summary data-i18n="q1">How many guests can the hall hold?</summary><div class="ans" data-i18n="a1">The main hall seats 500 guests. The dining hall seats 400 at once.</div></details>
+        <details><summary data-i18n="q2">Can I bring my own caterer?</summary><div class="ans" data-i18n="a2">Yes. We also have a vegetarian kitchen if you want to cook here.</div></details>
+        <details><summary data-i18n="q3">How much parking is there?</summary><div class="ans" data-i18n="a3">Free parking for 40 cars and 40 bikes.</div></details>
+        <details><summary data-i18n="q4">What if the power goes off?</summary><div class="ans" data-i18n="a4">We have full generator backup, so the muhurtham is never stopped.</div></details>
+        <details><summary data-i18n="q5">How do I confirm my date?</summary><div class="ans" data-i18n="a5">Contact us to confirm your date and discuss booking details.</div></details>
+        <details><summary data-i18n="q6">Can I see the hall before booking?</summary><div class="ans" data-i18n="a6">Yes. Call or WhatsApp us and we will fix a time for you.</div></details>
+        <details><summary data-i18n="q7">What if I need to cancel?</summary><div class="ans" data-i18n="a7">Please contact us on WhatsApp to discuss cancellations.</div></details>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div>
+        <div class="sec-head"><h2 data-i18n="v_h">Visit us</h2></div>
+        <dl>
+          <dt data-i18n="v_addr">Address</dt><dd data-i18n="v_addrv">123 Temple Road, Your Town, Tamil Nadu 000000</dd>
+          <dt data-i18n="v_phone">Phone</dt><dd><a href="tel:+919042040020">+91 90420 40020</a></dd>
+          <dt data-i18n="v_wa">WhatsApp</dt><dd><a href="https://wa.me/919042040020" target="_blank" rel="noopener">+91 90420 40020</a></dd>
+          <dt data-i18n="v_email">Email</dt><dd><a href="mailto:harish3451236@gmail.com">harish3451236@gmail.com</a></dd>
+          <dt data-i18n="v_hours">Office hours</dt><dd data-i18n="v_hoursv">Every day, 9:00 am – 7:00 pm</dd>
+        </dl>
+      </div>
+      <div class="map" data-i18n-html="v_map">Google Map goes here.<br>Send me your location and I will add it.</div>
+    </section>
+  </main>
+
+  <div class="marquee rev" aria-hidden="true"><div class="track"><span>வாழ்க வளமுடன்</span><span class="dot">✦</span><span>நூறாண்டு வாழ்க</span><span class="dot">✦</span><span>மணமக்கள் வாழ்க</span><span class="dot">✦</span><span>வாழ்க வளமுடன்</span><span class="dot">✦</span><span>நூறாண்டு வாழ்க</span><span class="dot">✦</span><span>மணமக்கள் வாழ்க</span><span class="dot">✦</span><span>வாழ்க வளமுடன்</span><span class="dot">✦</span><span>நூறாண்டு வாழ்க</span><span class="dot">✦</span><span>மணமக்கள் வாழ்க</span><span class="dot">✦</span><span>வாழ்க வளமுடன்</span><span class="dot">✦</span><span>நூறாண்டு வாழ்க</span><span class="dot">✦</span><span>மணமக்கள் வாழ்க</span><span class="dot">✦</span><span>வாழ்க வளமுடன்</span><span class="dot">✦</span><span>நூறாண்டு வாழ்க</span><span class="dot">✦</span><span>மணமக்கள் வாழ்க</span><span class="dot">✦</span><span>வாழ்க வளமுடன்</span><span class="dot">✦</span><span>நூறாண்டு வாழ்க</span><span class="dot">✦</span><span>மணமக்கள் வாழ்க</span><span class="dot">✦</span><span>வாழ்க வளமுடன்</span><span class="dot">✦</span><span>நூறாண்டு வாழ்க</span><span class="dot">✦</span><span>மணமக்கள் வாழ்க</span><span class="dot">✦</span><span>வாழ்க வளமுடன்</span><span class="dot">✦</span><span>நூறாண்டு வாழ்க</span><span class="dot">✦</span><span>மணமக்கள் வாழ்க</span><span class="dot">✦</span></div></div>
+  <div class="diyas" aria-hidden="true"><span>🪔</span><span>🪔</span><span>🪔</span><span>🪔</span><span>🪔</span></div>
+  <footer>
+    <p class="tamil">வாழ்க வளமுடன்</p>
+    <p data-i18n="foot">© 2026 Sri Lakshmi Kalyana Mahal · Wishing you a happy married life.</p>
+    <p class="updated" data-i18n="upd">Website updated: 17 October 2026</p>
+    <p class="updated">Git command: <code>git add &lt;filename&gt;</code></p>
+  </footer>
+</div>
+<div class="band" aria-hidden="true"></div>
+
+<script>
+/* ===== BOOKED DATES =====
+   After reviewing a WhatsApp enquiry and confirming the date, add it here as "YYYY-MM-DD".
+   To make a date free again, delete it from the list.
+   Example: "2026-11-22" means 22 November 2026. */
+var BOOKED_DATES = [
+  // Add confirmed dates here, for example: "2026-12-20",
+];
+
+/* ===== BOOKING SETTINGS ===== */
+var UPI_NAME = "Sri Lakshmi Kalyana Mahal";
+var BOOKING_API = "";   // Optional online payment/booking backend URL. Leave empty to keep online booking off.
+var ENQUIRY_API = "https://script.google.com/macros/s/AKfycbwICwQSy8aOJHlg0bcFGsEK5aBGdk7mO1qTY2ALvvCr3BuGV9n4ospIw3vCUpYqsi4Axg/exec";
+var ADVANCE_AMOUNT = 10000;  // advance in rupees. Must be the same number as ADVANCE_AMOUNT in booking-backend.gs
+var selectedDate = "";
+var REMOTE_BOOKED = [];
+function isBooked(k){ return BOOKED_DATES.indexOf(k) > -1 || REMOTE_BOOKED.indexOf(k) > -1; }
+
+var WHATSAPP = "919042040020"; // your number, with country code, no + or spaces
+
+/* ===== TAMIL TEXT =====
+   English text is written in the page itself. Tamil text for each part is below. */
+var TA = {
+  brand:"ஸ்ரீ லட்சுமி கல்யாண மஹால்",
+  n_fac:"வசதிகள்", n_gal:"புகைப்படங்கள்", n_rates:"கட்டணம்", n_call:"அழைக்க",
+  h_title:"உங்கள் திருமணம், வீடு போல உணர வைக்கும் மண்டபத்தில்.",
+  h_lead:"திருமணம், வரவேற்பு மற்றும் குடும்ப விழாக்களுக்கு ஏற்ற பெரிய, சுத்தமான மண்டபம். 400 பேர் அமரக்கூடிய உணவுக்கூடம், மணமக்களுக்கான அறைகள், விருந்தினர்களுக்கு வாகன நிறுத்துமிடம்.",
+  h_btn1:"தேதி காலியாக உள்ளதா?", h_btn2:"மண்டபத்தைப் பாருங்கள்",
+  s1:"பிரதான மண்டபத்தில் அமரலாம்", s2:"உணவுக்கூடத்தில் ஒரே நேரத்தில் உணவு", s3:"கார்கள் + இருசக்கர வாகனங்கள் நிறுத்த சொந்த இடம்",
+  f_h:"பெரிய நாளுக்குத் தேவையான அனைத்தும்", f_p:"முகூர்த்தம், விருந்து, தங்குமிடம் அனைத்தும் ஒரே இடத்தில்.",
+  f1h:"பிரதான மண்டபம்", f1p:"அகலமான மேடை, நல்ல விளக்கு மற்றும் ஒலி அமைப்பு, 500 விருந்தினர்கள் அமரலாம்.",
+  f2h:"உணவுக்கூடம்", f2p:"ஒரே நேரத்தில் 400 பேர் அமரலாம். சைவ சமையலறை, அல்லது உங்கள் சொந்த சமையல்காரரை அழைத்து வரலாம்.",
+  f3h:"மணமகள் மற்றும் மணமகன் அறைகள்", f3p:"கண்ணாடி, இணைந்த குளியலறை மற்றும் ஓய்வெடுக்க இடத்துடன் 4 அறைகள்.",
+  f5h:"வாகன நிறுத்துமிடம்", f5p:"40 கார்கள் மற்றும் 40 இருசக்கர வாகனங்களுக்கு இலவச நிறுத்துமிடம்.",
+  f6h:"மின் காப்பு வசதி", f6p:"முழு ஜெனரேட்டர் வசதி, முகூர்த்த நேரத்தில் எதுவும் தடைபடாது.",
+  g_h:"மண்டபத்தைப் பாருங்கள்", g_p:"இங்கு நடந்த உண்மையான திருமணங்களின் புகைப்படங்கள்.",
+  g1:"பிரதான மண்டபம் மற்றும் மேடை", g2:"மணமேடை", g3:"நுழைவாயில்", g4:"மணமகள் அறை", g5:"உணவுக்கூடம்",
+  g_note:"இந்த வண்ணப் பெட்டிகள் தற்காலிகமானவை. உங்கள் புகைப்படங்களை அனுப்புங்கள், இங்கே சேர்க்கிறேன்.",
+  r_h:"மண்டப வாடகை", r_p:"மாதிரி கட்டணங்கள். இறுதி விலை தேதி மற்றும் பருவத்தைப் பொறுத்தது.",
+  r1h:"முகூர்த்தம் மட்டும்", r_day:"/ நாள்", r1a:"பிரதான மண்டபம், காலை நிகழ்ச்சி", r1b:"மணமகள், மணமகன் அறைகள்", r1c:"வாகன நிறுத்தம் மற்றும் மின் காப்பு",
+  r2h:"முழு திருமணம்", r_2days:"/ 2 நாட்கள்", r2a:"வரவேற்பு இரவு மற்றும் முகூர்த்தம்", r2b:"பிரதான மண்டபம் மற்றும் உணவுக்கூடம்", r2c:"மணமகள், மணமகன் அறைகள்",
+  r3h:"சிறிய விழா", r_day2:"/ நாள்", r3a:"நிச்சயதார்த்தம், வளைகாப்பு, பிறந்தநாள்", r3b:"250 விருந்தினர்கள் வரை", r3c:"உணவுக்கூடம் உட்பட",
+  a_h:"உங்கள் தேதி காலியாக உள்ளதா?", a_p:"பச்சை தேதிகள் காலியாக உள்ளன. சிவப்பு தேதிகள் ஏற்கனவே பதிவாகிவிட்டன. விசாரணையைத் தொடங்க பச்சை தேதியைத் தொடவும்.",
+  a_free:"காலி", a_booked:"பதிவாகிவிட்டது",
+  d0:"ஞா", d1:"தி", d2:"செ", d3:"பு", d4:"வி", d5:"வெ", d6:"ச",
+  b_h:"உங்கள் விசாரணையை அனுப்புங்கள்", b_p:"படிவத்தை நிரப்பி இங்கேயே விசாரணையை அனுப்புங்கள். விரைவில் உங்களைத் தொடர்புகொள்வோம்.",
+  b_name:"உங்கள் பெயர்", b_phone:"தொலைபேசி எண்", b_date:"விழா தேதி", b_guests:"விருந்தினர் எண்ணிக்கை", b_ph:"எ.கா. 400",
+  b_type:"விழா வகை", o1:"திருமணம்", o2:"வரவேற்பு", o3:"நிச்சயதார்த்தம்", o4:"மற்ற விழா", b_send:"விசாரணை அனுப்பு",
+  p_h:"முன்பணம் செலுத்தி உங்கள் மண்டபத்தை பதிவு செய்யுங்கள்",
+  p_p:"தேதியை உறுதிசெய்ய முன்பணம் செலுத்துங்கள். பணம் செலுத்திய ஸ்கிரீன்ஷாட்டை வாட்ஸ்அப்பில் அனுப்புங்கள்.",
+  p_upi:"UPI மூலம் செலுத்த", p_upiid:"UPI ஐடி", copy:"நகலெடு", p_amt:"தொகை (₹)",
+  p_upibtn:"UPI ஆப் மூலம் செலுத்து", p_cardbtn:"கார்டு அல்லது நெட் பேங்கிங் மூலம் செலுத்து",
+  p_upinote:"இந்த UPI பொத்தான் கூகுள் பே, போன்பே அல்லது பேடிஎம் உள்ள தொலைபேசியில் செயல்படும்.",
+  p_bank:"வங்கி மூலம் செலுத்த", p_accname:"கணக்கு பெயர்", p_accno:"கணக்கு எண்", p_branch:"வங்கி மற்றும் கிளை", p_branchv:"உங்கள் வங்கி, உங்கள் ஊர்",
+  p_rule:"<b>பதிவு விதி:</b> மண்டப வாடகையில் 25% முன்பணம் செலுத்தினால் உங்கள் தேதி உறுதியாகும். விழாவுக்கு 60 நாட்கள் அல்லது அதற்கு முன் ரத்து செய்தால், சிறிய தொகையைப் பிடித்து முன்பணம் திருப்பித் தரப்படும். சரியான விதியை வாட்ஸ்அப்பில் எங்களிடம் உறுதிசெய்யவும்.",
+  v_h:"எங்களை சந்திக்க", v_addr:"முகவரி", v_addrv:"123 கோயில் சாலை, உங்கள் ஊர், தமிழ்நாடு 000000",
+  v_phone:"தொலைபேசி", v_wa:"வாட்ஸ்அப்", v_email:"மின்னஞ்சல்", v_hours:"அலுவலக நேரம்", v_hoursv:"தினமும் காலை 9:00 – மாலை 7:00",
+  v_map:"கூகுள் வரைபடம் இங்கே வரும்.<br>உங்கள் இருப்பிடத்தை அனுப்புங்கள், சேர்க்கிறேன்.",
+  foot:"© 2026 ஸ்ரீ லட்சுமி கல்யாண மஹால் · இனிய திருமண வாழ்க்கைக்கு வாழ்த்துகள்.",
+  qr_scan:"பணம் செலுத்த ஸ்கேன் செய்யவும்", qr_ph:"உங்கள் QR குறியீடு இங்கே தோன்றும்", st_h:"முன்பதிவு எப்படி நடக்கிறது", st_p:"மண்டபத்தை உறுதி செய்ய நான்கு எளிய படிகள்.",
+  st1h:"தேதியைப் பாருங்கள்", st1p:"நாள்காட்டியில் பாருங்கள். பச்சை தேதிகள் காலியாக உள்ளன.",
+  st2h:"மண்டபத்தைப் பாருங்கள்", st2p:"முடிவெடுக்கும் முன் மண்டபத்தைப் பார்க்க எங்களை அழைக்கவும் அல்லது வாட்ஸ்அப்பில் தொடர்பு கொள்ளவும்.",
+  st3h:"உங்கள் விசாரணையை அனுப்புங்கள்", st3p:"உங்கள் விழா விவரங்களையும் விருப்பமான தேதியையும் வாட்ஸ்அப்பில் அனுப்புங்கள்.",
+  st4h:"தேதியை உறுதிசெய்யுங்கள்", st4p:"காலியுள்ள தேதியையும் பதிவு விவரங்களையும் நாங்கள் உறுதிசெய்வோம்.",
+  q_h:"பலரும் கேட்கும் கேள்விகள்", q_p:"பதில் கிடைக்கவில்லையா? எங்களை அழைக்கவும் அல்லது வாட்ஸ்அப்பில் தொடர்பு கொள்ளவும்.",
+  q1:"மண்டபத்தில் எத்தனை பேர் அமரலாம்?", a1:"பிரதான மண்டபத்தில் 500 பேர் அமரலாம். உணவுக்கூடத்தில் ஒரே நேரத்தில் 400 பேர் அமரலாம்.",
+  q2:"என் சொந்த சமையல்காரரை அழைத்து வரலாமா?", a2:"வரலாம். இங்கே சமைக்க விரும்பினால் எங்களிடம் சைவ சமையலறையும் உள்ளது.",
+  q3:"வாகன நிறுத்த இடம் எவ்வளவு உள்ளது?", a3:"40 கார்கள் மற்றும் 40 இருசக்கர வாகனங்களுக்கு இலவச நிறுத்துமிடம் உள்ளது.",
+  q4:"மின்சாரம் போனால் என்ன ஆகும்?", a4:"எங்களிடம் முழு ஜெனரேட்டர் வசதி உள்ளது, முகூர்த்தம் தடைபடாது.",
+  q5:"என் தேதியை எப்படி உறுதி செய்வது?", a5:"உங்கள் தேதியை உறுதிசெய்யவும் பதிவு விவரங்களைப் பேசவும் எங்களைத் தொடர்புகொள்ளுங்கள்.",
+  q6:"பதிவு செய்யும் முன் மண்டபத்தைப் பார்க்கலாமா?", a6:"பார்க்கலாம். எங்களை அழைக்கவும் அல்லது வாட்ஸ்அப்பில் தொடர்பு கொள்ளவும், நேரம் ஒதுக்குகிறோம்.",
+  q7:"ரத்து செய்ய வேண்டுமானால் என்ன செய்வது?", a7:"ரத்து செய்வது குறித்து வாட்ஸ்அப்பில் எங்களைத் தொடர்புகொள்ளுங்கள்.",
+  ob_h:"ஆன்லைனில் உங்கள் தேதியை பதிவு செய்யுங்கள்", ob_p:"பச்சை தேதியைத் தேர்ந்தெடுத்து, முன்பணம் செலுத்தினால் உங்கள் தேதி உடனே பதிவாகும்.",
+  ob_sel:"உங்கள் தேதி", ob_adv:"செலுத்த வேண்டிய முன்பணம்",
+  ob_safe:"பணம் செலுத்துவதை Razorpay பாதுகாப்பாக கையாள்கிறது. உங்கள் கார்டு அல்லது UPI PIN எங்களுக்குத் தெரியாது.",
+  ob_none:"நாள்காட்டியில் ஒரு பச்சை தேதியைத் தேர்ந்தெடுக்கவும்", ob_btn:"{amt} செலுத்தி பதிவு செய்",
+  ob_wait:"காத்திருக்கவும்…", ob_pick:"முதலில் நாள்காட்டியில் ஒரு பச்சை தேதியைத் தேர்ந்தெடுக்கவும்.",
+  ob_det:"உங்கள் பெயரையும் 10 இலக்க தொலைபேசி எண்ணையும் உள்ளிடவும்.",
+  ob_taken:"மன்னிக்கவும், இந்த தேதி இப்போது வேறொருவரால் பதிவு செய்யப்பட்டது. வேறு தேதியைத் தேர்ந்தெடுக்கவும்.",
+  ob_held:"இந்த தேதிக்கு வேறொருவர் இப்போது பணம் செலுத்துகிறார். 10 நிமிடம் கழித்து முயற்சிக்கவும் அல்லது வேறு தேதியைத் தேர்ந்தெடுக்கவும்.",
+  ob_err:"ஏதோ தவறு நடந்துவிட்டது. மீண்டும் முயற்சிக்கவும் அல்லது வாட்ஸ்அப்பில் தொடர்பு கொள்ளவும்.",
+  ob_confirming:"பணம் பெறப்பட்டது. உங்கள் தேதியை உறுதி செய்கிறோம்…", ob_ok:"முடிந்தது! உங்கள் தேதி பதிவாகிவிட்டது: ",
+  ob_pid:"பணம் செலுத்திய எண்: ", ob_cancel:"பணம் செலுத்துவது ரத்து செய்யப்பட்டது. உங்கள் தேதி 10 நிமிடங்களுக்கு காக்கப்படும்.",
+  ob_failed:"பணம் செலுத்த முடியவில்லை. மீண்டும் முயற்சிக்கவும்.",
+  ob_paidnc:"உங்கள் பணம் கிடைத்தது, ஆனால் தேதியை உறுதி செய்ய முடியவில்லை. இந்த பணம் செலுத்திய எண்ணுடன் வாட்ஸ்அப்பில் தொடர்பு கொள்ளவும்: ",
+  ob_conflict:"உங்கள் பணம் கிடைத்தது, ஆனால் இந்த தேதி சற்று முன் பதிவாகிவிட்டது. பணத்தைத் திருப்பித் தருவோம். வாட்ஸ்அப்பில் தொடர்பு கொள்ளவும். பணம் செலுத்திய எண்: ",
+  ob_email:"மின்னஞ்சல் (இங்கே உங்கள் இன்வாய்ஸ் அனுப்பப்படும்)", ob_dl:"இன்வாய்ஸ் பதிவிறக்கம்",
+  ob_mailed:"உங்கள் இன்வாய்ஸ் இந்த மின்னஞ்சலுக்கும் அனுப்பப்பட்டது: ", ob_email_bad:"சரியான மின்னஞ்சலை உள்ளிடவும், அல்லது காலியாக விடவும்.",
+  enq_wait:"அனுப்புகிறோம்…", enq_ok:"நன்றி! உங்கள் விசாரணை கிடைத்தது. விரைவில் உங்களைத் தொடர்புகொள்வோம்.",
+  enq_bad:"உங்கள் பெயரையும் 10 இலக்க தொலைபேசி எண்ணையும் உள்ளிடவும்.",
+  enq_save_error:"விசாரணையை இப்போது அனுப்ப முடியவில்லை. மீண்டும் முயற்சிக்கவும் அல்லது எங்களை அழைக்கவும்.",
+  enq_many:"இப்போது அதிக விசாரணைகள் வருகின்றன. தயவுசெய்து பின்னர் முயற்சிக்கவும் அல்லது எங்களை அழைக்கவும்.",
+  upd:"இணையதளம் புதுப்பிக்கப்பட்டது: 17 அக்டோபர் 2026",
+  copied:"நகலெடுக்கப்பட்டது ✓", holdcopy:"அழுத்திப் பிடித்து நகலெடுக்கவும்"
+};
+var MONTHS_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+var MONTHS_TA = ["ஜனவரி","பிப்ரவரி","மார்ச்","ஏப்ரல்","மே","ஜூன்","ஜூலை","ஆகஸ்ட்","செப்டம்பர்","அக்டோபர்","நவம்பர்","டிசம்பர்"];
+
+var LANG = "en";
+var STORE_KEY = "mahal_lang";
+function tr(key, en){ return (LANG === "ta" && TA[key]) ? TA[key] : en; }
+
+/* When online booking is ON, a few texts change (no more "send a screenshot") */
+if (BOOKING_API){
+  var AMT = "\u20B9" + ADVANCE_AMOUNT.toLocaleString("en-IN");
+  var ON_EN = {
+    st3p: "Tell us your event details and preferred date on WhatsApp.",
+    st4p: "We will contact you to confirm availability and booking details.",
+    a5: "Contact us to confirm your date and discuss booking details.",
+    a7: "Please read the booking rule in the online booking section, or ask us on WhatsApp.",
+    b_p: "Fill in the form and send your enquiry here. We will contact you soon.",
+    b_send: "Send enquiry",
+    p_rule: "<b>Booking rule:</b> the advance of " + AMT + " confirms your date. If you cancel 60 days or more before the function, we return the advance after a small deduction. Please confirm the exact rule with us on WhatsApp."
+  };
+  var ON_TA = {
+    st3p: "உங்கள் விழா விவரங்களையும் விருப்பமான தேதியையும் வாட்ஸ்அப்பில் அனுப்புங்கள்.",
+    st4p: "காலியுள்ள தேதியையும் பதிவு விவரங்களையும் நாங்கள் உறுதிசெய்வோம்.",
+    a5: "உங்கள் தேதியை உறுதிசெய்யவும் பதிவு விவரங்களைப் பேசவும் எங்களைத் தொடர்புகொள்ளுங்கள்.",
+    a7: "ஆன்லைன் பதிவு பகுதியில் உள்ள பதிவு விதியைப் படியுங்கள் அல்லது வாட்ஸ்அப்பில் கேளுங்கள்.",
+    b_p: "படிவத்தை நிரப்பி இங்கேயே விசாரணையை அனுப்புங்கள். விரைவில் உங்களைத் தொடர்புகொள்வோம்.",
+    b_send: "விசாரணை அனுப்பு",
+    p_rule: "<b>பதிவு விதி:</b> " + AMT + " முன்பணம் செலுத்தினால் உங்கள் தேதி உறுதியாகும். விழாவுக்கு 60 நாட்கள் அல்லது அதற்கு முன் ரத்து செய்தால், சிறிய தொகையைப் பிடித்து முன்பணம் திருப்பித் தரப்படும். சரியான விதியை வாட்ஸ்அப்பில் எங்களிடம் உறுதிசெய்யவும்."
+  };
+  Object.keys(ON_EN).forEach(function(k){
+    document.querySelectorAll('[data-i18n="' + k + '"]').forEach(function(e){ e.textContent = ON_EN[k]; });
+    document.querySelectorAll('[data-i18n-html="' + k + '"]').forEach(function(e){ e.innerHTML = ON_EN[k]; });
+    TA[k] = ON_TA[k];
+  });
+}
+
+/* remember the English text that is written in the page */
+document.querySelectorAll("[data-i18n]").forEach(function(e){ e.setAttribute("data-en", e.textContent); });
+document.querySelectorAll("[data-i18n-html]").forEach(function(e){ e.setAttribute("data-en", e.innerHTML); });
+document.querySelectorAll("[data-i18n-ph]").forEach(function(e){ e.setAttribute("data-en", e.getAttribute("placeholder")); });
+
+function applyLang(l){
+  LANG = l;
+  document.documentElement.lang = (l === "ta") ? "ta" : "en";
+  document.querySelectorAll("[data-i18n]").forEach(function(e){
+    e.textContent = (l === "ta" && TA[e.getAttribute("data-i18n")]) ? TA[e.getAttribute("data-i18n")] : e.getAttribute("data-en");
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach(function(e){
+    e.innerHTML = (l === "ta" && TA[e.getAttribute("data-i18n-html")]) ? TA[e.getAttribute("data-i18n-html")] : e.getAttribute("data-en");
+  });
+  document.querySelectorAll("[data-i18n-ph]").forEach(function(e){
+    e.setAttribute("placeholder", (l === "ta" && TA[e.getAttribute("data-i18n-ph")]) ? TA[e.getAttribute("data-i18n-ph")] : e.getAttribute("data-en"));
+  });
+  document.getElementById("langSwitch").textContent = (l === "ta") ? "English" : "தமிழ்";
+  if (window.__drawCal) window.__drawCal();
+  if (window.__renderQr) window.__renderQr();
+  if (window.__renderOb) window.__renderOb();
+}
+
+function openSite(l, remember, animate){
+  if (remember){ try { localStorage.setItem(STORE_KEY, l); } catch(e){} }
+  applyLang(l);
+  var gate = document.getElementById("gate");
+  if (animate){
+    gate.classList.add("leaving");
+    setTimeout(function(){ gate.hidden = true; }, 480);
+  } else {
+    gate.hidden = true;
+  }
+  document.body.classList.remove("locked");
+  document.body.classList.add("ready");
+  if (window.__startAnim) window.__startAnim();
+}
+
+/* language gate buttons */
+document.querySelectorAll(".lang-btn").forEach(function(b){
+  b.addEventListener("click", function(){ openSite(b.getAttribute("data-lang"), true, true); window.scrollTo(0,0); });
+});
+/* language switch in the header */
+document.getElementById("langSwitch").addEventListener("click", function(){
+  var next = (LANG === "ta") ? "en" : "ta";
+  try { localStorage.setItem(STORE_KEY, next); } catch(e){}
+  applyLang(next);
+});
+
+/* availability calendar */
+(function(){
+  var today = new Date(); today.setHours(0,0,0,0);
+  var startY = today.getFullYear(), startM = today.getMonth();
+  var y = startY, m = startM;
+  var pad = function(n){return (n < 10 ? "0" : "") + n};
+  var key = function(yy, mm, dd){return yy + "-" + pad(mm + 1) + "-" + pad(dd)};
+
+  function draw(dir){
+    var MONTHS = (LANG === "ta") ? MONTHS_TA : MONTHS_EN;
+    document.getElementById("monthTitle").textContent = MONTHS[m] + " " + y;
+    document.getElementById("prev").disabled = (y === startY && m === startM);
+    var first = new Date(y, m, 1).getDay();
+    var total = new Date(y, m + 1, 0).getDate();
+    var html = "";
+    for (var i = 0; i < first; i++) html += "<span></span>";
+    for (var d = 1; d <= total; d++){
+      var k = key(y, m, d);
+      var isPast = new Date(y, m, d) < today;
+      if (isPast) html += '<span class="past">' + d + '</span>';
+      else if (isBooked(k)) html += '<span class="booked" title="Booked" aria-label="' + d + ' ' + MONTHS[m] + ', booked">' + d + '</span>';
+      else html += '<button class="free' + (k === selectedDate ? ' sel' : '') + '" data-date="' + k + '" aria-label="' + d + ' ' + MONTHS[m] + ', free">' + d + '</button>';
+    }
+    var cellsEl = document.getElementById("cells");
+    cellsEl.innerHTML = html;
+    cellsEl.classList.remove("sl", "sr");
+    if (dir === 1 || dir === -1){ void cellsEl.offsetWidth; cellsEl.classList.add(dir === 1 ? "sr" : "sl"); }
+  }
+  window.__drawCal = function(){ draw(); };
+
+  document.getElementById("prev").addEventListener("click", function(){ m--; if (m < 0){ m = 11; y--; } draw(-1); });
+  document.getElementById("next").addEventListener("click", function(){ m++; if (m > 11){ m = 0; y++; } draw(1); });
+  document.getElementById("cells").addEventListener("click", function(e){
+    var k = e.target.getAttribute && e.target.getAttribute("data-date");
+    if (!k) return;
+    selectedDate = k;
+    document.getElementById("date").value = k;
+    draw();
+    if (window.__renderOb) window.__renderOb();
+    if (BOOKING_API){
+      document.getElementById("onlinebook").scrollIntoView({behavior:"smooth"});
+      document.getElementById("obName").focus({preventScroll:true});
+    } else {
+      document.getElementById("book").scrollIntoView({behavior:"smooth"});
+      document.getElementById("name").focus({preventScroll:true});
+    }
+  });
+  draw();
+})();
+
+/* ===== ONLINE BOOKING: customer pays first, the date is booked automatically ===== */
+(function(){
+  var section = document.getElementById("onlinebook");
+  var msgEl = document.getElementById("obMsg");
+  var btn = document.getElementById("obBtn");
+  var amtText = "\u20B9" + ADVANCE_AMOUNT.toLocaleString("en-IN");
+
+  function fmtDate(k){
+    var p = k.split("-"), M = (LANG === "ta") ? MONTHS_TA : MONTHS_EN;
+    return parseInt(p[2], 10) + " " + M[parseInt(p[1], 10) - 1] + " " + p[0];
+  }
+  var lastEmail = "";
+  function renderOb(){
+    var invEl = document.getElementById("obInv");
+    if (invEl && !invEl.hidden) invEl.textContent = tr("ob_dl", "Download invoice") + (invEl.getAttribute("data-no") ? " (" + invEl.getAttribute("data-no") + ")" : "");
+    document.getElementById("obDate").textContent = selectedDate ? fmtDate(selectedDate) : tr("ob_none", "Pick a green date in the calendar");
+    document.getElementById("obAmt").textContent = amtText;
+    btn.textContent = tr("ob_btn", "Pay {amt} and book").replace("{amt}", amtText);
+  }
+  window.__renderOb = renderOb;
+  if (!BOOKING_API){ return; }          // online booking is off: this section stays hidden
+
+  section.hidden = false;
+  var manual = document.getElementById("payment");
+  if (manual) manual.hidden = true;      // the old "send screenshot" payment box is not needed any more
+  renderOb();
+
+  function msg(text, kind){ msgEl.textContent = text; msgEl.className = "ob-msg" + (kind ? " " + kind : ""); }
+  function busy(on){ btn.disabled = on; btn.setAttribute("aria-busy", on ? "true" : "false"); }
+  function api(obj){
+    return fetch(BOOKING_API, {method: "POST", body: JSON.stringify(obj)}).then(function(r){ return r.json(); });
+  }
+  function redraw(){ if (window.__drawCal) window.__drawCal(); }
+
+  function loadBooked(){
+    fetch(BOOKING_API).then(function(r){ return r.json(); }).then(function(d){
+      REMOTE_BOOKED = (d.booked || []).concat(d.held || []);
+      if (selectedDate && isBooked(selectedDate)){
+        selectedDate = ""; renderOb();
+        msg(tr("ob_taken", "Sorry, this date was just booked by someone else. Please pick another date."), "err");
+      }
+      redraw();
+    }).catch(function(){});
+  }
+  loadBooked();
+  setInterval(loadBooked, 60000);
+  window.addEventListener("focus", loadBooked);
+
+  /* load Razorpay's payment window ahead of time so it opens quickly */
+  function loadRazorpay(cb){
+    if (window.Razorpay) return cb(true);
+    var sc = document.createElement("script");
+    sc.src = "https://checkout.razorpay.com/v1/checkout.js";
+    sc.onload = function(){ cb(true); };
+    sc.onerror = function(){ cb(false); };
+    document.head.appendChild(sc);
+  }
+  loadRazorpay(function(){});
+
+  function failText(code){
+    if (code === "date_taken") return tr("ob_taken", "Sorry, this date was just booked by someone else. Please pick another date.");
+    if (code === "date_held") return tr("ob_held", "Someone is paying for this date right now. Please try again in 10 minutes or pick another date.");
+    if (code === "bad_details") return tr("ob_det", "Please enter your name and a 10-digit phone number.");
+    return tr("ob_err", "Something went wrong. Please try again, or WhatsApp us.");
+  }
+
+  function finished(date, pid, c){
+    REMOTE_BOOKED.push(date);
+    selectedDate = ""; renderOb(); redraw(); busy(false);
+    msg(tr("ob_ok", "Done! Your date is booked: ") + fmtDate(date) + ". " + tr("ob_pid", "Payment ID: ") + pid +
+        (lastEmail ? ". " + tr("ob_mailed", "We also emailed your invoice to ") + lastEmail : ""), "ok");
+    var inv = document.getElementById("obInv");
+    if (c && c.invoicePdf){
+      try {
+        var bin = atob(c.invoicePdf), bytes = new Uint8Array(bin.length);
+        for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+        inv.href = URL.createObjectURL(new Blob([bytes], {type: "application/pdf"}));
+        inv.setAttribute("download", (c.invoiceNo || "invoice") + ".pdf");
+        inv.setAttribute("data-no", c.invoiceNo || "");
+        inv.hidden = false;
+        renderOb();
+      } catch(e){}
+    }
+    setTimeout(loadBooked, 2000);
+  }
+
+  function confirmPay(paymentId, tries){
+    var retry = function(){
+      if (tries < 3) setTimeout(function(){ confirmPay(paymentId, tries + 1); }, 2500);
+      else { busy(false); msg(tr("ob_paidnc", "We received your payment but could not confirm the date. Please WhatsApp us with this payment ID: ") + paymentId, "err"); }
+    };
+    api({action: "confirm", paymentId: paymentId}).then(function(c){
+      if (c.ok) finished(c.date, paymentId, c);
+      else if (c.error === "date_taken_paid"){ busy(false); msg(tr("ob_conflict", "We received your payment, but this date was taken just before. We will refund you. Please WhatsApp us. Payment ID: ") + paymentId, "err"); loadBooked(); }
+      else retry();
+    }).catch(retry);
+  }
+
+  btn.addEventListener("click", function(){
+    var name = document.getElementById("obName").value.trim();
+    var phone = document.getElementById("obPhone").value.trim();
+    var email = document.getElementById("obEmail").value.trim();
+    if (!selectedDate){ msg(tr("ob_pick", "Please pick a green date in the calendar first."), "err"); return; }
+    if (!name || phone.replace(/\D/g, "").length < 10){ msg(tr("ob_det", "Please enter your name and a 10-digit phone number."), "err"); return; }
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ msg(tr("ob_email_bad", "Please enter a valid email, or leave it empty."), "err"); return; }
+    lastEmail = email;
+    document.getElementById("obInv").hidden = true;
+    busy(true); msg(tr("ob_wait", "Please wait\u2026"));
+    var date = selectedDate;
+    api({action: "createOrder", date: date, name: name, phone: phone, email: email}).then(function(r){
+      if (r.error){ busy(false); msg(failText(r.error), "err"); loadBooked(); return; }
+      loadRazorpay(function(okLoad){
+        if (!okLoad){ busy(false); msg(failText(""), "err"); return; }
+        var rz = new window.Razorpay({
+          key: r.keyId, amount: r.amount, currency: "INR", name: UPI_NAME,
+          description: "Advance for " + date, order_id: r.orderId,
+          prefill: {name: name, contact: phone, email: email}, theme: {color: "#7A1020"},
+          handler: function(resp){
+            msg(tr("ob_confirming", "Payment received. Confirming your date\u2026"));
+            confirmPay(resp.razorpay_payment_id, 1);
+          },
+          modal: {ondismiss: function(){ busy(false); msg(tr("ob_cancel", "Payment was cancelled. Your date stays held for 10 minutes.")); }}
+        });
+        rz.on("payment.failed", function(){ busy(false); msg(tr("ob_failed", "Payment failed. Please try again."), "err"); });
+        rz.open();
+      });
+    }).catch(function(){ busy(false); msg(failText(""), "err"); });
+  });
+})();
+
+/* Save enquiries to the booking sheet without taking customers away from the page. */
+document.getElementById("enquiry").addEventListener("submit", function(e){
+  e.preventDefault();
+  var form = e.target;
+  var v = function(id){return document.getElementById(id).value.trim()};
+  var out = document.getElementById("enqMsg");
+  var nm = v("name"), digits = v("phone").replace(/\D/g, "");
+  if (!nm || digits.length < 10){
+    out.textContent = tr("enq_bad", "Please enter your name and a 10-digit phone number.");
+    document.getElementById(nm ? "phone" : "name").focus();
+    return;
+  }
+  var btn = form.querySelector("button[type=submit]");
+  if (!ENQUIRY_API){
+    out.textContent = tr("enq_save_error", "Enquiries are temporarily unavailable. Please try again or call us.");
+    return;
+  }
+  btn.disabled = true;
+  btn.setAttribute("aria-busy", "true");
+  out.textContent = tr("enq_wait", "Sending\u2026");
+  fetch(ENQUIRY_API, {method: "POST", body: JSON.stringify({
+    action: "enquiry", name: v("name"), phone: v("phone"), date: v("date"),
+    guests: v("guests"), type: v("type"), website: v("faxnumber")
+  })}).then(function(r){ return r.json(); }).then(function(r){
+    btn.disabled = false;
+    btn.removeAttribute("aria-busy");
+    if (r.ok){ out.textContent = tr("enq_ok", "Thank you! Your enquiry has been received. We will contact you soon."); form.reset(); }
+    else if (r.error === "too_many"){ out.textContent = tr("enq_many", "We are getting many enquiries right now. Please try again later or call us."); }
+    else if (r.error === "bad_details"){
+      out.textContent = tr("enq_bad", "Please enter your name and a 10-digit phone number.");
+    }
+    else { out.textContent = tr("enq_save_error", "Could not send your enquiry. Please try again or call us."); }
+  }).catch(function(){
+    btn.disabled = false;
+    btn.removeAttribute("aria-busy");
+    out.textContent = tr("enq_save_error", "Could not send your enquiry. Please try again or call us.");
+  });
+});
+
+/* ===== ANIMATION (scroll reveal, counters, petals, progress bar) ===== */
+(function(){
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var started = false;
+  var items = [];
+  var groups = [".stats div", ".sec-head", ".marquee", ".feat>div", ".gallery figure", ".plan", ".steps .step", ".cal", ".ob", ".book", ".pay .box", ".pay-note", ".faq details", ".visit dl", ".visit .map"];
+
+  if (!reduce){
+    groups.forEach(function(sel){
+      document.querySelectorAll(sel).forEach(function(el, i){
+        el.classList.add("reveal");
+        el.style.setProperty("--d", ((i % 6) * 90) + "ms");
+        items.push(el);
+      });
+    });
+  }
+
+  function show(el){
+    el.classList.add("in");
+    var wait = 1100 + (parseInt(el.style.getPropertyValue("--d"), 10) || 0);
+    setTimeout(function(){ el.classList.remove("reveal", "in"); el.style.removeProperty("--d"); }, wait);
+  }
+
+  function startReveal(){
+    if (!items.length) return;
+    if (!("IntersectionObserver" in window)){ items.forEach(show); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ show(en.target); io.unobserve(en.target); }
+      });
+    }, {threshold: 0.12, rootMargin: "0px 0px -6% 0px"});
+    items.forEach(function(el){ io.observe(el); });
+  }
+
+  function startCounters(){
+    if (reduce || !("IntersectionObserver" in window)) return;
+    document.querySelectorAll("[data-count]").forEach(function(el){
+      var target = parseInt(el.getAttribute("data-count"), 10);
+      var suffix = el.getAttribute("data-suffix") || "";
+      var io = new IntersectionObserver(function(en){
+        if (!en[0].isIntersecting) return;
+        io.disconnect();
+        var t0 = performance.now(), dur = 1300;
+        (function tick(t){
+          var p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * e) + (p >= 1 ? suffix : "");
+          if (p < 1) requestAnimationFrame(tick);
+        })(t0);
+      }, {threshold: 0.6});
+      io.observe(el);
+    });
+  }
+
+  function startPetals(){
+    var box = document.getElementById("petals");
+    if (reduce || !box || box.children.length) return;
+    box.style.setProperty("--h", ((box.parentNode.offsetHeight || 700) + 30) + "px");
+    for (var i = 0; i < 14; i++){
+      var p = document.createElement("i");
+      var size = 8 + Math.random() * 8;
+      p.className = (i % 3 === 0) ? "p2" : "";
+      p.style.cssText = "left:" + (Math.random() * 100) + "%;width:" + size + "px;height:" + (size * 1.4) + "px;" +
+        "--dx:" + (Math.random() * 120 - 60) + "px;" +
+        "animation-duration:" + (9 + Math.random() * 8) + "s," + (2.5 + Math.random() * 2) + "s;" +
+        "animation-delay:" + (-Math.random() * 14) + "s," + (-Math.random() * 3) + "s";
+      box.appendChild(p);
+    }
+  }
+
+  var bar = document.getElementById("progress");
+  var archEl = document.querySelector(".arch");
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = "scaleX(" + (h > 0 ? Math.min(1, window.scrollY / h) : 0) + ")";
+    if (!reduce && archEl) archEl.style.setProperty("--py", Math.min(24, window.scrollY * 0.08) + "px");
+  }
+
+  /* sparkles: tap or click anywhere, and a light trail for the mouse */
+  var COLORS = ["#F29F05", "#F2C14E", "#E8590C"];
+  var live = 0, lastTrail = 0;
+  function spark(x, y, n, far){
+    for (var i = 0; i < n && live < 60; i++){
+      var el = document.createElement("i");
+      el.className = "spark";
+      var a = Math.random() * Math.PI * 2, d = (far ? 28 : 10) + Math.random() * (far ? 46 : 22);
+      el.style.cssText = "left:" + x + "px;top:" + y + "px;--tx:" + (Math.cos(a) * d) + "px;--ty:" + (Math.sin(a) * d) + "px;background:" + COLORS[i % 3];
+      live++;
+      (function(node){
+        var done = function(){ if (node.parentNode){ node.parentNode.removeChild(node); live--; } };
+        node.addEventListener("animationend", done);
+        setTimeout(done, 1200);
+      })(el);
+      document.body.appendChild(el);
+    }
+  }
+  if (!reduce){
+    document.addEventListener("pointerdown", function(e){ spark(e.clientX, e.clientY, 9, true); });
+    document.addEventListener("pointermove", function(e){
+      if (e.pointerType !== "mouse") return;
+      var now = Date.now();
+      if (now - lastTrail < 60) return;
+      lastTrail = now;
+      spark(e.clientX, e.clientY, 1, false);
+    });
+  }
+  window.addEventListener("scroll", onScroll, {passive: true});
+  onScroll();
+
+  window.__startAnim = function(){
+    if (started) return;
+    started = true;
+    startReveal(); startCounters(); startPetals();
+  };
+})();
+
+/* open straight away if the visitor already chose a language before */
+(function(){
+  var saved = null;
+  try { saved = localStorage.getItem(STORE_KEY); } catch(e){}
+  if (saved === "ta" || saved === "en"){ openSite(saved, false); }
+  else { var b = document.getElementById("pickTa"); if (b) b.focus(); }
+})();
+</script>
+</body>
+</html>
